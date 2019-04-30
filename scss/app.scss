@@ -172,6 +172,7 @@ body {
 .three-blocks {
   background-color: $white;
 
+
   h2 {
     text-transform: uppercase;
     font-size: 2rem;
@@ -193,7 +194,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 35%;
     padding-bottom: 40px;
   }
 }
@@ -207,4 +208,25 @@ body {
   h3 {
     font-size: 0.8rem;
   }
+}
+
+.headeroftable {
+  background-color: $main-yellow;
+  color: $white;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+.fcol {
+  background-color: $main-blue;
+  color: $white;
+  padding: 10px 0px 10px 20px;
+}
+
+.scol {
+  color: $main-blue;
+  font-weight: 600;
+  text-align: center;
+  width: 50%;
 }

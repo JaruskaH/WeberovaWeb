@@ -1,0 +1,210 @@
+@charset 'utf-8';
+
+@import "menu";
+@import "settings";
+@import "foundation";
+@import "motion-ui";
+
+// Global styles
+@include foundation-global-styles;
+@include foundation-forms;
+@include foundation-typography;
+
+// Grids (choose one)
+// @include foundation-xy-grid-classes;
+// @include foundation-grid;
+@include foundation-flex-grid;
+
+// Generic components
+@include foundation-button;
+@include foundation-button-group;
+@include foundation-close-button;
+@include foundation-label;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-switch;
+@include foundation-table;
+// Basic components
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-dropdown;
+@include foundation-pagination;
+@include foundation-tooltip;
+
+// Containers
+@include foundation-accordion;
+@include foundation-media-object;
+@include foundation-orbit;
+@include foundation-responsive-embed;
+@include foundation-tabs;
+@include foundation-thumbnail;
+// Menu-based containers
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-accordion-menu;
+@include foundation-drilldown-menu;
+@include foundation-dropdown-menu;
+
+// Layout components
+@include foundation-off-canvas;
+@include foundation-reveal;
+@include foundation-sticky;
+@include foundation-title-bar;
+@include foundation-top-bar;
+
+// Helpers
+// @include foundation-float-classes;
+@include foundation-flex-classes;
+@include foundation-visibility-classes;
+// @include foundation-prototype-classes;
+
+// Motion UI
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+@media print,
+screen and (min-width: 40em) {
+  .h31 {
+    color: red;
+    font-size: 3rem;
+  }
+}
+
+body {
+  background-color: $light-gray;
+}
+
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
+[data-sticky] {
+  width: 100%;
+}
+
+.sticky-container {
+  z-index: 5;
+}
+
+.name-background {
+  background-color: $main-blue;
+
+  h2 {
+    color: $white;
+    text-transform: uppercase;
+    padding: 10px 10px 10px 20px;
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+  }
+}
+
+#hero {
+  background-image: url(/images/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text-banner {
+  background: $white;
+  padding: 30px 50px 30px 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $main-blue;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: $dark-gray;
+    margin: 0px;
+    padding: 5px 0px 5px 0px;
+    font-weight: bold;
+  }
+
+  .far {
+    color: $main-yellow;
+    padding: 0px 5px 0px 0px;
+  }
+}
+
+.row {
+  padding: 50px;
+}
+
+.white-block {
+  background-color: $white;
+}
+
+.pomucka-text {
+  padding: 20px 0px 0px 0px;
+  color: $dark-gray;
+
+
+  .far {
+    color: $main-blue;
+    padding: 0px 5px 0px 40px;
+  }
+}
+
+.price {
+  text-align: right;
+  background-color: $white;
+  color: $main-blue;
+  font-size: 1.2rem;
+  padding: 15px;
+}
+
+.three-blocks {
+  background-color: $white;
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    color: $main-blue;
+
+  }
+
+  p {
+    color: $dark-gray;
+    text-align: center;
+  }
+
+  .columns {
+    padding: 20px 40px 20px 40px;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 40px;
+  }
+}
+
+.footer {
+  background-color: $dark-gray;
+  color: $white;
+  text-align: center;
+  padding: 20px;
+
+  h3 {
+    font-size: 0.8rem;
+  }
+}

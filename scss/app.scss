@@ -156,13 +156,13 @@ body {
 }
 
 .pomucka-text {
-  padding: 20px 0px 0px 0px;
+  padding: 2rem 2rem 0rem 2rem;
   color: $dark-gray;
 
 
   .far {
     color: $main-blue;
-    padding: 0px 5px 0px 40px;
+    padding: 0px 5px 0px 0px;
   }
 }
 
@@ -261,4 +261,25 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.submitBut {
+  background-color: $main-blue;
+}
+
+.submitBut:hover {
+  background-color: scale-color($main-blue, $lightness: -34%);
+}
+
+@media only screen and (max-width: 1024px) {
+  .blockpadding {
+    padding-bottom: 50px;
+  }
 }

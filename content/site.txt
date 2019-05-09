@@ -1,0 +1,17 @@
+Title: Computer Vision group of IRAFM
+
+----
+
+Author: Zanti.cz
+
+----
+
+Description: Nový virtuální operátor, který se vám přizpůsobí, nabízíme tarify nebo dobíjecí karty za nízké ceny volání.
+
+----
+
+Keywords: computer vision, research, deep learning, machine learning, image processing
+
+----
+
+Copyright: © 2017-(date: Year) (link: http://irafm.osu.cz text: VisionIRAFM)
